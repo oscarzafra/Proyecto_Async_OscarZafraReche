@@ -7,11 +7,6 @@ header {
     background-color: red;
 }
 
-header > h1 {
-    letter-spacing: 5px;
-
-}   
-
 header > input 
 header > button {
     border: 2px solid black;
@@ -20,8 +15,47 @@ header > button {
     background-color: transparent;
     font-weight: 500;
     transition: 0.3s;
+    
+    
 }
 
-header > input:hover, header > button:hover {
-    border:2px solid red;
+header > #searchInput:hover, header > #searchBtn:hover {
+    border:2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 15%;
+}
+
+header > #holi {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 100px;
+    padding: 2px 8px;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    
+}
+
+#holi li:hover {
+    color: purple;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#theme-toggle {
+    border-radius: 15%;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
